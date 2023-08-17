@@ -1,0 +1,95 @@
+/* function parImpar(numero){
+    if(numero % 2 === 0){
+        return "par"
+    }
+    else{
+        return "impar"
+    }
+}
+console.log(parImpar(7))
+*/ 
+
+/* function factorialize(num) {
+ 
+    if (num < 0) 
+          return -1;
+      
+    else if (num == 0) 
+        return 1;
+      
+      else {
+          return (num * factorialize(num - 1));
+        
+      }
+  }
+  factorialize(5);
+
+function numeroPrimo(num) {
+    for (var i = 2; i < num; i++) {
+      if(num % i === 0) {
+         return false;
+      }
+    }
+    return num !== 1;  
+  }
+  console.log( numeroPrimo(5) );
+  
+  function fibonacci(){
+  var termo = parseInt(document.getElementById('numero').value);
+  var resposta = document.getElementById('resposta');
+  var penultimo=0, ultimo=1;
+  var numero;
+
+  if(termo<=2)
+   numero = termo-1;
+  else{
+   count=3;
+   while(count<=termo){
+    numero= ultimo + penultimo;
+    penultimo = ultimo;
+    ultimo=numero;
+    count++;
+   }
+  }
+
+  resposta.innerHTML=numero;
+}
+
+function reverseString(str) {
+    var newString = "";
+    for (var i = str.length - 1; i >= 0; i--) {
+        newString += str[i];
+    }
+    return newString;
+}
+reverseString('hello');
+
+function retornaNNumerosPares(n) {
+  let numerosPares = [];
+  for (let i = 0; numerosPares.length < n; i += 2) {
+    numerosPares.push(i);
+  }
+  return numerosPares;
+}
+
+console.log(retornaNNumerosPares(5));
+
+function somaDosPares(x){
+   let soma = 0;
+   for(let i = 0; i <= x; i+=2){
+     soma += i
+   }
+   return soma;
+}
+console.log(somaDosPares(9));
+
+function pairSum(numberIndex){
+  let result = 0;
+  for(let i = 0; i <= numberIndex; i++){
+    if(i % 2 === 0){
+      result += i;
+    }
+  }
+  return result;
+}
+*/
